@@ -6,10 +6,6 @@
       "type": "build"
     },
     {
-      "name": "@aws-cdk/core",
-      "type": "build"
-    },
-    {
       "name": "@types/fs-extra",
       "version": "^8.1.1",
       "type": "build"
@@ -33,6 +29,10 @@
     },
     {
       "name": "@types/uuid",
+      "type": "build"
+    },
+    {
+      "name": "aws-cdk-lib",
       "type": "build"
     },
     {
@@ -104,52 +104,7 @@
       "type": "bundled"
     },
     {
-      "name": "@aws-cdk/aws-apigateway",
-      "version": "^1.127.0",
-      "type": "peer"
-    },
-    {
-      "name": "@aws-cdk/aws-appsync",
-      "version": "^1.127.0",
-      "type": "peer"
-    },
-    {
-      "name": "@aws-cdk/aws-cloudformation",
-      "version": "^1.127.0",
-      "type": "peer"
-    },
-    {
-      "name": "@aws-cdk/aws-cognito",
-      "version": "^1.127.0",
-      "type": "peer"
-    },
-    {
-      "name": "@aws-cdk/aws-iam",
-      "version": "^1.127.0",
-      "type": "peer"
-    },
-    {
-      "name": "@aws-cdk/aws-lambda",
-      "version": "^1.127.0",
-      "type": "peer"
-    },
-    {
-      "name": "@aws-cdk/aws-s3-assets",
-      "version": "^1.127.0",
-      "type": "peer"
-    },
-    {
-      "name": "@aws-cdk/aws-s3-deployment",
-      "version": "^1.127.0",
-      "type": "peer"
-    },
-    {
-      "name": "@aws-cdk/aws-s3",
-      "version": "^1.127.0",
-      "type": "peer"
-    },
-    {
-      "name": "@aws-cdk/cloudformation-include",
+      "name": "aws-cdk-lib",
       "version": "^1.127.0",
       "type": "peer"
     },
@@ -159,52 +114,7 @@
       "type": "peer"
     },
     {
-      "name": "@aws-cdk/aws-apigateway",
-      "version": "^1.127.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-appsync",
-      "version": "^1.127.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-cloudformation",
-      "version": "^1.127.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-cognito",
-      "version": "^1.127.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-iam",
-      "version": "^1.127.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-lambda",
-      "version": "^1.127.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-s3-assets",
-      "version": "^1.127.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-s3-deployment",
-      "version": "^1.127.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/aws-s3",
-      "version": "^1.127.0",
-      "type": "runtime"
-    },
-    {
-      "name": "@aws-cdk/cloudformation-include",
+      "name": "aws-cdk-lib",
       "version": "^1.127.0",
       "type": "runtime"
     },

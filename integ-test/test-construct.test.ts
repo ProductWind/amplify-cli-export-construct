@@ -1,8 +1,8 @@
 import { AmplifyExportedBackend, CategoryStackMapping } from '../src';
 import * as path from 'path';
-import * as cdk from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
 import * as fs from 'fs-extra';
-import { expect as cdkExpect, countResources, haveResource, } from '@aws-cdk/assert';
+import { expect as cdkExpect, countResources, haveResource } from 'aws-cdk-lib/assertions';
 import { ResourceTypeConstants } from './resource-type-string-generator';
 
 // eslint-disable-next-line import/no-unresolved

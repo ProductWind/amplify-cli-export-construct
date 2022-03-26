@@ -22,7 +22,7 @@ const project = new AwsCdkConstructLibrary({
     '@types/node',
     '@types/uuid',
     'yaml',
-    '@aws-cdk/core',
+    'aws-cdk-lib',
   ],
   authorOrganization: true,
   repositoryUrl: 'https://github.com/aws-amplify/amplify-cli-export-construct.git',
@@ -47,16 +47,7 @@ const project = new AwsCdkConstructLibrary({
   majorVersion: '0',
   docgen: true,
   cdkDependencies: [
-    '@aws-cdk/aws-apigateway',
-    '@aws-cdk/aws-appsync',
-    '@aws-cdk/aws-cloudformation',
-    '@aws-cdk/aws-cognito',
-    '@aws-cdk/aws-iam',
-    '@aws-cdk/aws-lambda',
-    '@aws-cdk/aws-s3',
-    '@aws-cdk/aws-s3-assets',
-    '@aws-cdk/aws-s3-deployment',
-    '@aws-cdk/cloudformation-include',
+    'aws-cdk-lib'
   ],
   gitignore: [
     'integ-test/amplify-e2e-core',

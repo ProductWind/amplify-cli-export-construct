@@ -18,7 +18,7 @@ new AmplifyExportedBackend(scope: Construct, id: string, props: AmplifyExportedB
 
 ##### `scope`<sup>Required</sup> <a name="@aws-amplify/cdk-exported-backend.AmplifyExportedBackend.parameter.scope"></a>
 
-- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
+- *Type:* [`aws-cdk-lib/core.Construct`](#aws-cdk-lib/core.Construct)
 
 The parent construct of this template.
 
@@ -133,7 +133,7 @@ Categories defined in Amplify CLI like function, api, auth etc.
 public readonly cfnInclude: CfnInclude;
 ```
 
-- *Type:* [`@aws-cdk/cloudformation-include.CfnInclude`](#@aws-cdk/cloudformation-include.CfnInclude)
+- *Type:* [`aws-cdk-lib/cloudformation-include.CfnInclude`](#aws-cdk-lib/cloudformation-include.CfnInclude)
 
 cfnInclude of the Amplify backend.
 
@@ -145,7 +145,7 @@ cfnInclude of the Amplify backend.
 public readonly rootStack: Stack;
 ```
 
-- *Type:* [`@aws-cdk/core.Stack`](#@aws-cdk/core.Stack)
+- *Type:* [`aws-cdk-lib/core.Stack`](#aws-cdk-lib/core.Stack)
 
 The root stack created.
 
@@ -197,7 +197,7 @@ A description of the stack.
 public readonly env: Environment;
 ```
 
-- *Type:* [`@aws-cdk/core.Environment`](#@aws-cdk/core.Environment)
+- *Type:* [`aws-cdk-lib/core.Environment`](#aws-cdk-lib/core.Environment)
 - *Default:* The environment of the containing `Stage` if available,
 otherwise create the stack will be environment-agnostic.
 
@@ -243,8 +243,8 @@ Name to deploy the stack with.
 public readonly synthesizer: IStackSynthesizer;
 ```
 
-- *Type:* [`@aws-cdk/core.IStackSynthesizer`](#@aws-cdk/core.IStackSynthesizer)
-- *Default:* `DefaultStackSynthesizer` if the `@aws-cdk/core:newStyleStackSynthesis` feature flag
+- *Type:* [`aws-cdk-lib/core.IStackSynthesizer`](#aws-cdk-lib/core.IStackSynthesizer)
+- *Default:* `DefaultStackSynthesizer` if the `aws-cdk-lib/core:newStyleStackSynthesis` feature flag
 is set, `LegacyStackSynthesizer` otherwise.
 
 Synthesis method to use while deploying this stack.
@@ -358,7 +358,7 @@ const exportManifest: ExportManifest = { ... }
 public readonly props: CfnIncludeProps;
 ```
 
-- *Type:* [`@aws-cdk/cloudformation-include.CfnIncludeProps`](#@aws-cdk/cloudformation-include.CfnIncludeProps)
+- *Type:* [`aws-cdk-lib/cloudformation-include.CfnIncludeProps`](#aws-cdk-lib/cloudformation-include.CfnIncludeProps)
 
 ---
 
@@ -456,7 +456,7 @@ new APIGraphQLIncludedNestedStack(includedStack: IncludedNestedStack)
 
 ##### `includedStack`<sup>Required</sup> <a name="@aws-amplify/cdk-exported-backend.APIGraphQLIncludedNestedStack.parameter.includedStack"></a>
 
-- *Type:* [`@aws-cdk/cloudformation-include.IncludedNestedStack`](#@aws-cdk/cloudformation-include.IncludedNestedStack)
+- *Type:* [`aws-cdk-lib/cloudformation-include.IncludedNestedStack`](#aws-cdk-lib/cloudformation-include.IncludedNestedStack)
 
 ---
 
@@ -515,7 +515,7 @@ is the model name in your Graph QL API.
 public readonly includedTemplate: CfnInclude;
 ```
 
-- *Type:* [`@aws-cdk/cloudformation-include.CfnInclude`](#@aws-cdk/cloudformation-include.CfnInclude)
+- *Type:* [`aws-cdk-lib/cloudformation-include.CfnInclude`](#aws-cdk-lib/cloudformation-include.CfnInclude)
 
 ---
 
@@ -525,7 +525,7 @@ public readonly includedTemplate: CfnInclude;
 public readonly stack: NestedStack;
 ```
 
-- *Type:* [`@aws-cdk/core.NestedStack`](#@aws-cdk/core.NestedStack)
+- *Type:* [`aws-cdk-lib/core.NestedStack`](#aws-cdk-lib/core.NestedStack)
 
 ---
 
@@ -542,7 +542,7 @@ new APIRestIncludedStack(includedStack: IncludedNestedStack, resourceName: strin
 
 ##### `includedStack`<sup>Required</sup> <a name="@aws-amplify/cdk-exported-backend.APIRestIncludedStack.parameter.includedStack"></a>
 
-- *Type:* [`@aws-cdk/cloudformation-include.IncludedNestedStack`](#@aws-cdk/cloudformation-include.IncludedNestedStack)
+- *Type:* [`aws-cdk-lib/cloudformation-include.IncludedNestedStack`](#aws-cdk-lib/cloudformation-include.IncludedNestedStack)
 
 ---
 
@@ -587,7 +587,7 @@ public restAPI()
 public readonly includedTemplate: CfnInclude;
 ```
 
-- *Type:* [`@aws-cdk/cloudformation-include.CfnInclude`](#@aws-cdk/cloudformation-include.CfnInclude)
+- *Type:* [`aws-cdk-lib/cloudformation-include.CfnInclude`](#aws-cdk-lib/cloudformation-include.CfnInclude)
 
 ---
 
@@ -607,7 +607,7 @@ public readonly resourceName: string;
 public readonly stack: NestedStack;
 ```
 
-- *Type:* [`@aws-cdk/core.NestedStack`](#@aws-cdk/core.NestedStack)
+- *Type:* [`aws-cdk-lib/core.NestedStack`](#aws-cdk-lib/core.NestedStack)
 
 ---
 
@@ -624,7 +624,7 @@ new AuthIncludedNestedStack(includedStack: IncludedNestedStack)
 
 ##### `includedStack`<sup>Required</sup> <a name="@aws-amplify/cdk-exported-backend.AuthIncludedNestedStack.parameter.includedStack"></a>
 
-- *Type:* [`@aws-cdk/cloudformation-include.IncludedNestedStack`](#@aws-cdk/cloudformation-include.IncludedNestedStack)
+- *Type:* [`aws-cdk-lib/cloudformation-include.IncludedNestedStack`](#aws-cdk-lib/cloudformation-include.IncludedNestedStack)
 
 ---
 
@@ -675,7 +675,7 @@ public userPool()
 public readonly includedTemplate: CfnInclude;
 ```
 
-- *Type:* [`@aws-cdk/cloudformation-include.CfnInclude`](#@aws-cdk/cloudformation-include.CfnInclude)
+- *Type:* [`aws-cdk-lib/cloudformation-include.CfnInclude`](#aws-cdk-lib/cloudformation-include.CfnInclude)
 
 ---
 
@@ -685,7 +685,7 @@ public readonly includedTemplate: CfnInclude;
 public readonly stack: NestedStack;
 ```
 
-- *Type:* [`@aws-cdk/core.NestedStack`](#@aws-cdk/core.NestedStack)
+- *Type:* [`aws-cdk-lib/core.NestedStack`](#aws-cdk-lib/core.NestedStack)
 
 ---
 
@@ -702,7 +702,7 @@ new LambdaFunctionIncludedNestedStack(includedStack: IncludedNestedStack)
 
 ##### `includedStack`<sup>Required</sup> <a name="@aws-amplify/cdk-exported-backend.LambdaFunctionIncludedNestedStack.parameter.includedStack"></a>
 
-- *Type:* [`@aws-cdk/cloudformation-include.IncludedNestedStack`](#@aws-cdk/cloudformation-include.IncludedNestedStack)
+- *Type:* [`aws-cdk-lib/cloudformation-include.IncludedNestedStack`](#aws-cdk-lib/cloudformation-include.IncludedNestedStack)
 
 ---
 
@@ -735,7 +735,7 @@ public lambdaFunction()
 public readonly includedTemplate: CfnInclude;
 ```
 
-- *Type:* [`@aws-cdk/cloudformation-include.CfnInclude`](#@aws-cdk/cloudformation-include.CfnInclude)
+- *Type:* [`aws-cdk-lib/cloudformation-include.CfnInclude`](#aws-cdk-lib/cloudformation-include.CfnInclude)
 
 ---
 
@@ -745,7 +745,7 @@ public readonly includedTemplate: CfnInclude;
 public readonly stack: NestedStack;
 ```
 
-- *Type:* [`@aws-cdk/core.NestedStack`](#@aws-cdk/core.NestedStack)
+- *Type:* [`aws-cdk-lib/core.NestedStack`](#aws-cdk-lib/core.NestedStack)
 
 ---
 
